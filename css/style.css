@@ -1,0 +1,53 @@
+body {
+    margin: 0 auto;
+}
+
+.block {
+    /* border: solid 1px #000000; */
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.block-logo {
+    background-color: #F0BE2E;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.block-menu {
+    background-color: #F40F0F;
+    height: 100px;
+}
+
+.block-news {
+    background-color: #AC4C4C;
+    width: 100px;
+    height: 300px;
+    float: left;
+}
+
+.block-list {
+    background-color: #F0BE2E;
+    height: 300px;
+    width: 65%;
+    display: inline-block;
+}
+
+.block-nav {
+    background-color: #333333;
+    height: 450px;
+    width: calc(100% - 65% - 100px);
+    float: right;
+
+}
+
+.block-footer {
+    background-color: #F0BE2E;
+    height: 150px;
+    width: 74%;
+}
