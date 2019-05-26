@@ -2,14 +2,8 @@ body {
     margin: 0 auto;
 }
 
-.block {
-    /* border: solid 1px #000000; */
-}
-
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+.wrap {
+    box-sizing: border-box;
 }
 
 .block-logo {
@@ -17,11 +11,13 @@ body {
     width: 100px;
     height: 100px;
     float: left;
+    line-height: 100px;
 }
 
 .block-menu {
     background-color: #F40F0F;
     height: 100px;
+    line-height: 100px;
 }
 
 .block-news {
@@ -29,6 +25,7 @@ body {
     width: 100px;
     height: 300px;
     float: left;
+    line-height: 300px;
 }
 
 .block-list {
@@ -36,12 +33,14 @@ body {
     height: 300px;
     width: 65%;
     display: inline-block;
+    line-height: 300px;
 }
 
 .block-nav {
     background-color: #333333;
-    height: 450px;
-    width: calc(100% - 65% - 100px);
+    height: 451px;
+    line-height: 451px;
+    width: calc(100% - 65% - 102px);
     float: right;
 
 }
@@ -49,5 +48,37 @@ body {
 .block-footer {
     background-color: #F0BE2E;
     height: 150px;
-    width: 74%;
+    line-height: 150px;
+    width: calc(100% - 26% - 72px);
+}
+
+.block {
+    text-align: center;
+}
+
+.block:first-child {
+    border-right: 1px solid black;
+}
+
+.block:nth-last-child(3) {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.block:nth-last-child(4) {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.block:nth-last-child(3) {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.block:nth-last-child(5) {
+    border-bottom: 1px solid black;
+}
+
+.block:last-child {
+    border-right: 1px solid black;
 }
