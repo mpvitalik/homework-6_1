@@ -1,9 +1,9 @@
-body {
-    margin: 0 auto;
+* {
+    box-sizing: border-box;
 }
 
-.wrap {
-    box-sizing: border-box;
+body {
+    margin: 0 auto;
 }
 
 .block-logo {
@@ -17,6 +17,7 @@ body {
 .block-menu {
     background-color: #F40F0F;
     height: 100px;
+    margin-left: 100px;
     line-height: 100px;
 }
 
@@ -31,7 +32,7 @@ body {
 .block-list {
     background-color: #F0BE2E;
     height: 300px;
-    width: 65%;
+    width: calc(65% - 50px);
     display: inline-block;
     line-height: 300px;
 }
@@ -40,7 +41,7 @@ body {
     background-color: #333333;
     height: 451px;
     line-height: 451px;
-    width: calc(100% - 65% - 102px);
+    width: calc(35% - 50px);
     float: right;
 
 }
@@ -48,8 +49,9 @@ body {
 .block-footer {
     background-color: #F0BE2E;
     height: 150px;
+    float: left;
     line-height: 150px;
-    width: calc(100% - 26% - 72px);
+    width: calc(65% + 50px);
 }
 
 .block {
@@ -67,6 +69,7 @@ body {
 
 .block:nth-last-child(4) {
     border-right: 1px solid black;
+    border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
 
